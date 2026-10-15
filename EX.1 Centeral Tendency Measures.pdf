@@ -1,0 +1,102 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [8 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Title <FEFF00450058002E0031002000430065006E0074006500720061006C002000540065006E00640065006E006300790020004D0065006100730075007200650073> /Producer (CodeShack Text to PDF Converter) /CreationDate (D:20261014121657Z) >>
+endobj
+4 0 obj
+<< /Font << /F1 5 0 R /F2 6 0 R >> >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<< /Length 1035 >>
+stream
+BT
+0 g
+/F2 16.8 Tf
+1 0 0 1 56.69 768.4 Tm
+(EX.1 Centeral Tendency Measures) Tj
+0 g
+/F1 12 Tf
+1 0 0 1 56.69 745.81 Tm
+(import statistics) Tj
+0 g
+/F1 12 Tf
+1 0 0 1 56.69 725.05 Tm
+(numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]) Tj
+0 g
+/F1 12 Tf
+1 0 0 1 56.69 704.29 Tm
+(print\("Mean:", statistics.mean\(numbers\)\)) Tj
+0 g
+/F1 12 Tf
+1 0 0 1 56.69 687.73 Tm
+(print\("Median:", statistics.median\(numbers\)\)) Tj
+0 g
+/F1 12 Tf
+1 0 0 1 56.69 671.17 Tm
+(print\("Mode:", statistics.mode\(numbers\)\)) Tj
+0 g
+/F1 12 Tf
+1 0 0 1 56.69 654.61 Tm
+(print\("Variance:", statistics.variance\(numbers\)\)) Tj
+0 g
+/F1 12 Tf
+1 0 0 1 56.69 638.05 Tm
+(print\("Standard Deviation:", statistics.stdev\(numbers\)\)) Tj
+0 g
+/F2 12 Tf
+1 0 0 1 56.69 596.53 Tm
+(Output) Tj
+0 g
+/F1 12 Tf
+1 0 0 1 56.69 575.77 Tm
+(Mean: 5) Tj
+0 g
+/F1 12 Tf
+1 0 0 1 56.69 559.21 Tm
+(Median: 5) Tj
+0 g
+/F1 12 Tf
+1 0 0 1 56.69 542.65 Tm
+(Mode: 1) Tj
+0 g
+/F1 12 Tf
+1 0 0 1 56.69 526.09 Tm
+(Variance: 7.5) Tj
+0 g
+/F1 12 Tf
+1 0 0 1 56.69 509.53 Tm
+(Standard Deviation: 2.7386127875258306) Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources 4 0 R /Contents 7 0 R >>
+endobj
+xref
+0 9
+0000000000 65535 f
+0000000015 00000 n
+0000000064 00000 n
+0000000121 00000 n
+0000000358 00000 n
+0000000411 00000 n
+0000000508 00000 n
+0000000610 00000 n
+0000001696 00000 n
+trailer
+<< /Size 9 /Root 1 0 R /Info 3 0 R >>
+startxref
+1806
+%%EOF
