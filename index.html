@@ -1,50 +1,109 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My PDF Library</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f1f5f9;
-      color: #1e293b;
-      margin: 0;
-      padding: 24px;
-      text-align: center;
-    }
-    main {
-      max-width: 650px;
-      margin: 30px auto;
-      background: white;
-      padding: 24px;
-      border-radius: 16px;
-    }
-    a {
-      display: block;
-      margin: 12px 0;
-      padding: 14px;
-      background: #2563eb;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📚 My PDF Library</title>
+    <style>
+        :root {
+            /* We use a semi-transparent card background so the farming photo peeks through */
+            --card-bg: rgba(15, 32, 23, 0.8); 
+            --text-color: #f8fafc;     
+            --accent-color: #4ade80;   /* Bright farming green for links and hovers */
+            --text-muted: #cbd5e1;     
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* This adds the farming landscape image and overlays a dark tint so text stays readable */
+            background: linear-gradient(rgba(10, 25, 15, 0.85), rgba(10, 25, 15, 0.85)), 
+                        url('https://unsplash.com') no-repeat center center fixed;
+            background-size: cover;
+            color: var(--text-color);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            /* Text shadow helps text pop out over image backgrounds */
+            text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        /* The Grid Layout for PDF Cards */
+        .pdf-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        /* Styling each PDF link to look like a button/card */
+        .pdf-card {
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 25px 20px;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.2rem;
+            border: 2px solid transparent;
+            backdrop-filter: blur(8px); /* Smooth glassy effect over the farming image */
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Smooth animation when you hover your mouse */
+        .pdf-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+            box-shadow: 0 10px 15px -3px rgba(74, 222, 128, 0.3);
+            color: var(--accent-color);
+            background-color: rgba(20, 45, 30, 0.95);
+        }
+
+        .pdf-icon {
+            font-size: 2rem;
+        }
+    </style>
 </head>
 <body>
-  <main>
-    <h1>📚 My PDF Library</h1>
-    <p>Welcome! Choose a PDF below to read.</p>
 
-    <a href="pdfs/EX.2 Linear Regresson and  Multiple Linear Regresson.pdf">PDF 1</a>
-    <a href="pdfs/EX.8 Image classifier using CNN in TensorFlow Keras.pdf">PDF 2</a>
-    <a href="pdfs/EX.1 Centeral Tendency Measures.pdf">PDF 3</a>
-    <a href="pdfs/EX.7 K-means algorithm_full_program_output.pdf">PDF 4</a>
-    <a href="pdfs/EX.5 Nearest Neighbours and NavieBaye Algorithm.pdf">PDF 5</a>
-    <a href="pdfs/EX.4 binary_classification_full_program_and_output.pdf">PDF 6</a>
-    <a href="pdfs/EX.3 Logistic Regression using Sklearn_full_program_output.pdf">PDF 7</a>
-  </main>
+    <header>
+        <h1>📚 My PDF Library</h1>
+        <p>Select a document below to read or download instantly.</p>
+    </header>
+
+    <main class="pdf-container">
+        <a href="EX.2 Linear Regresson and  Multiple Linear Regresson.pdf" target="_blank" class="pdf-card"><span class="pdf-icon">📄</span> PDF 1</a>
+        <a href="EX.8 Image classifier using CNN in TensorFlow Keras.pdf" target="_blank" class="pdf-card"><span class="pdf-icon">📄</span> PDF 2</a>
+        <a href="EX.1 Centeral Tendency Measures.pdf" target="_blank" class="pdf-card"><span class="pdf-icon">📄</span> PDF 3</a>
+        <a href="EX.7 K-means algorithm_full_program_output.pdf" target="_blank" class="pdf-card"><span class="pdf-icon">📄</span> PDF 4</a>
+        <a href="EX.5 Nearest Neighbours and NavieBaye Algorithm.pdf" target="_blank" class="pdf-card"><span class="pdf-icon">📄</span> PDF 5</a>
+        <a href="EX.4 binary_classification_full_program_and_output.pdf" target="_blank" class="pdf-card"><span class="pdf-icon">📄</span> PDF 6</a>
+        <a href="EX.3 Logistic Regression using Sklearn_full_program_output.pdf" target="_blank" class="pdf-card"><span class="pdf-icon">📄</span> PDF 7</a>
+    </main>
+
 </body>
 </html>
-```
